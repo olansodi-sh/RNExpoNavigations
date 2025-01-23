@@ -1,11 +1,15 @@
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView } from 'react-native'
 import React from 'react'
 
 const index = () => {
   return (
-    <View className='mt-10'>
-      <Text className='text-3xl font-bold text-blue-500'>Hola mundo</Text>
-    </View>
+    <SafeAreaView>
+        <View className='mt-6 mx-2.5'>
+          <Text className='text-3xl font-work-black'>font-work-black</Text>
+          <Text className='text-3xl font-work-medium'>font-work-medium</Text>
+          <Text className='text-3xl font-work-light'>font-work-light</Text>
+        </View>
+    </SafeAreaView>
   )
 }
 
