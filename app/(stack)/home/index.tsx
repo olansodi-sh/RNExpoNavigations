@@ -15,8 +15,12 @@ const HomeScreen = () => {
             <CustomButton className='mb-10'  BgColor={'primary'}>Productos</CustomButton>
           </Link>
           
-          <CustomButton className='mb-10' BgColor={'primary'} onPress={()=> router.push("./products")}>Ir a Productos</CustomButton>
-          <CustomButton className='mb-10' BgColor={'primary'} onPress={()=> router.push("./products")} variant='text-only'>Ir a Productos variante</CustomButton>
+          <CustomButton className='mb-10' BgColor={'secondary'} onPress={()=> router.push("./profile")}>Profile</CustomButton>
+          <CustomButton className='mb-10' BgColor={'tertiary'} onPress={()=> router.push("./settings")}>Settings</CustomButton>
+          
+          <Link href={'./products'} asChild>
+            <CustomButton variant={'text-only'} className='mb-10'  BgColor={'primary'}>Variante Productos</CustomButton>
+          </Link>
         </View>
       </SafeAreaView>
     </React.Fragment>
