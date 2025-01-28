@@ -3,10 +3,13 @@ import React from 'react'
 
 import { Drawer } from 'expo-router/drawer';
 import { Ionicons } from '@expo/vector-icons';
+import CustomDrawer from '@/components/shared/CustomDrawer';
 
 const DrawerLayout = () => {
   return (
     <Drawer
+        // Si existe el drawerContent no se renderizan las opciones
+        drawerContent={CustomDrawer}
         screenOptions={{
             headerShown: true,
             overlayColor: 'rgba(0,0,0,0.7)',
