@@ -11,14 +11,14 @@ const HomeScreen = () => {
           {/* <Link className='mb-5' href={'./products'}>Productos</Link>
           <Link className='mb-5' href={'./profile'}>Profile</Link>
           <Link className='mb-5' href={'./settings'}>settings</Link> */}
-          <Link className='mb-5' href={'./products'} asChild>
+          <Link className='mb-5' href={'/products'} asChild>
             <CustomButton className='mb-10'  BgColor={'primary'}>Productos</CustomButton>
           </Link>
           
-          <CustomButton className='mb-10' BgColor={'secondary'} onPress={()=> router.push("./profile")}>Profile</CustomButton>
-          <CustomButton className='mb-10' BgColor={'tertiary'} onPress={()=> router.push("./settings")}>Settings</CustomButton>
+          <CustomButton className='mb-10' BgColor={'secondary'} onPress={()=> router.push("/profile")}>Profile</CustomButton>
+          <CustomButton className='mb-10' BgColor={'tertiary'} onPress={()=> router.push("/settings")}>Settings</CustomButton>
           
-          <Link href={'./products'} asChild>
+          <Link href={'/products'} asChild>
             <CustomButton variant={'text-only'} className='mb-10'  BgColor={'primary'}>Variante Productos</CustomButton>
           </Link>
         </View>

@@ -3,7 +3,7 @@ import { Link } from 'expo-router'
 import React from 'react'
 import { FlatList, Text, View } from 'react-native'
 
-const index = () => {
+const ProductsScreen = () => {
   return (
     <View className='flex flex-1 px-4'>
       <FlatList
@@ -15,7 +15,7 @@ const index = () => {
             <Text className='font-work-medium'>{item.description}</Text>
             <View className='flex flex-row justify-between'>
               <Text className='font-work-black'>{item.price}</Text>
-              <Link href={`./products/${item.id}`} className='text-primary'>
+              <Link href={`/products/${item.id}`} className='text-primary'>
                 Ver detalles..
               </Link>
             </View>
@@ -26,4 +26,4 @@ const index = () => {
   )
 }
 
-export default index
+export default ProductsScreen

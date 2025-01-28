@@ -13,8 +13,9 @@ const StackLayout = () => {
     >
         <Stack.Screen name='home/index' options={{ title:'Home Screen'}}/>
         <Stack.Screen name='products/index' options={{ title:'Products Screen', animation:'ios_from_right'}}/>
-        <Stack.Screen name='profile/index' options={{ title:'Profile Screen'}}/>
+        <Stack.Screen name='products/[id]' options={{ title:'Profile Screen'}}/>
         <Stack.Screen name='settings/index' options={{ title:'Settings Screen'}}/>
+        <Stack.Screen name='profile/index' options={{ title:'Settings Screen'}}/>
     </Stack>
   )
 }

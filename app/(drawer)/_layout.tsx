@@ -11,7 +11,7 @@ const DrawerLayout = () => {
         // Si existe el drawerContent no se renderizan las opciones
         drawerContent={CustomDrawer}
         screenOptions={{
-            headerShown: true,
+            headerShown: false,
             overlayColor: 'rgba(0,0,0,0.7)',
             drawerActiveTintColor: 'indigo',
             headerShadowVisible: false,
@@ -20,6 +20,16 @@ const DrawerLayout = () => {
             }
         }}
     >
+        <Drawer.Screen
+          name="(tabs)" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: 'Tabs Stack',
+            title: 'Tabs Stack',
+            drawerIcon:()=>(
+                <Ionicons name="albums-outline" size={24} color="indigo" />
+            )
+          }}
+        />
          <Drawer.Screen
           name="user/index" // This is the name of the page and must match the url from root
           options={{
@@ -30,6 +40,7 @@ const DrawerLayout = () => {
             )
           }}
         />
+
         <Drawer.Screen
           name="schedule/index" // This is the name of the page and must match the url from root
           options={{
