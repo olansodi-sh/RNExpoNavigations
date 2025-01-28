@@ -22,7 +22,7 @@ const DetailProductScreen = () => {
 
         navigation.setOptions({      
       
-           title: product.title,    
+           title: product?.title??'Product ',    
       
         });  
       

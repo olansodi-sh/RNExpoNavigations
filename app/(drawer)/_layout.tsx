@@ -11,7 +11,6 @@ const DrawerLayout = () => {
         // Si existe el drawerContent no se renderizan las opciones
         drawerContent={CustomDrawer}
         screenOptions={{
-            headerShown: false,
             overlayColor: 'rgba(0,0,0,0.7)',
             drawerActiveTintColor: 'indigo',
             headerShadowVisible: false,
@@ -23,6 +22,7 @@ const DrawerLayout = () => {
         <Drawer.Screen
           name="(tabs)" // This is the name of the page and must match the url from root
           options={{
+            headerShown: false,
             drawerLabel: 'Tabs Stack',
             title: 'Tabs Stack',
             drawerIcon:()=>(
