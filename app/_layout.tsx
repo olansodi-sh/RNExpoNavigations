@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 
 import { Slot, SplashScreen } from 'expo-router'
@@ -28,7 +29,10 @@ const RootLayout = () => {
 	if(!fontsLoaded && !error) return null;
 	
 	return (
-	  <Slot />
+		<GestureHandlerRootView style={{ flex: 1 }}>
+			<Slot />
+	  	</GestureHandlerRootView>
+	//   <Slot />
 	)
 }
 
